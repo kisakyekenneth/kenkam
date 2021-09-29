@@ -10,7 +10,7 @@
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <h1 id="title">Our survey form</h1>
-  <h4 id="description">fill all the inputs bellow</h4>
+  <p id="description">fill all the inputs bellow</p>
   <form id="survey-form">
     <label for="name" id="name-label">Name:</label>
     <input type="text" name="name" id="name" placeholder="Enter your name" required>
@@ -21,35 +21,44 @@
     <label for="number" id="number-label">Age</label>
     <input type="number" min="18" max="35" name="number" id="number" placeholder="enter your age" required>
 
+    <p>Which option best describes your current role?</p>
     <select id="dropdown" name="choice">
       <option value="Student">Student</option>
       <option value="Junior">Junior dev.</option>
       <option value="Senior-dev">Senior dev</option>
     </select>
+
     <div>
-      <input type="radio" name="options" id="definite" value="definitely">
-      <label for="definite"> Definitely</label>
-    </div>
-    <div>
-      <input type="radio" name="options" id="maybe" value="maybe">
-      <label for="definite"> Maybe</label>
-    </div>
-    <div>
-      <input type="radio" name="options" id="notsure" value="not sure">
-      <label for="not sure"> Not sure</label>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <div>
+        <input type="radio" name="options" id="definite" value="definitely" class="input-radio" checked>
+        <label for="definite"> Definitely</label>
+      </div>
+      <div>
+        <input type="radio" name="options" id="maybe" value="maybe" class="input-radio">
+        <label for="definite"> Maybe</label>
+      </div>
+      <div>
+        <input type="radio" name="options" id="notsure" value="not sure">
+        <label for="not sure"> Not sure</label>
+      </div>
     </div>
 
-    <label for="front-end">
-      <input type="checkbox" name="front-end" id="frontend" value="front-end">
-      front-end
-    </label>
-    <label for="back-end"></label>
-    <input type="checkbox" name="back-end" id="backend" value="back-end">
-    Back-End
-    </label>
+    <div>
+      <label for="front-end">
+        <input type="checkbox" name="front-end" id="frontend" value="front-end" class="input-checkbox">
+        front-end
+      </label>
+      <label for="back-end"></label>
+      <input type="checkbox" name="back-end" id="backend" value="back-end" class="input-checkbox">
+      Back-End
+      </label>
+    </div>
 
 
-    <textarea> </textarea>
+    <div>
+      <textarea> </textarea>
+    </div>
 
     <button id="submit"> submit</button>
 
