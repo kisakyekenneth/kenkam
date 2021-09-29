@@ -12,9 +12,21 @@
   <h1 id="title">Our survey form</h1>
   <h4 id="description">fill all the inputs bellow</h4>
   <form id="survey-form">
-    <input type="text" name="name" id="name" required>
-    <input type="email" name="email" id="email" required>
-    <input type="number" name="number" id="number" required>
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+    <label for="email" id="email-label">Email</label>
+    <input type="email" name="email" id="email" placeholder="Your email adress" required>
+
+    <label for="number" id="number-label">Age</label>
+    <input type="number" min="18" max="35" name="number" id="number" placeholder="enter your age" required>
+
+    <select id="dropdown" name="choice">
+      <option value="Student">Student</option>
+      <option value="Junior">Junior dev.</option>
+      <option value="Senior-dev">Senior dev</option>
+    </select>
+
   </form>
   <script src="js/index.js"></script>
 </body>
